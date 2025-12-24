@@ -80,7 +80,7 @@ export default function App() {
     <div className="w-full h-screen relative bg-gradient-to-b from-black via-[#001a0d] to-[#0a2f1e]">
       <ErrorBoundary>
         <Canvas
-          dpr={[1, 1.5]}
+          dpr={1}
           camera={{ position: [0, 6, 26], fov: 45 }}
           gl={{ antialias: false, stencil: false, alpha: false }}
           shadows
