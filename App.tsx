@@ -47,7 +47,7 @@ class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { has
 
 export default function App() {
   // Initialize with local static photos
-  const staticPhotos = Array.from({ length: 22 }, (_, i) => `/ photos / ${i + 1}.jpg`);
+  const staticPhotos = Array.from({ length: 22 }, (_, i) => `/photos/${i + 1}.jpg`);
 
   const [mode, setMode] = useState<TreeMode>(TreeMode.FORMED);
   const [handPosition, setHandPosition] = useState<{ x: number; y: number; detected: boolean }>({ x: 0.5, y: 0.5, detected: false });
