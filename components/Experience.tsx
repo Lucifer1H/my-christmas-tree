@@ -115,7 +115,6 @@ export const Experience: React.FC<ExperienceProps> = ({ mode, handPosition, uplo
         />
 
         <Polaroids mode={mode} uploadedPhotos={uploadedPhotos} twoHandsDetected={twoHandsDetected} onClosestPhotoChange={onClosestPhotoChange} />
-        <Polaroids mode={mode} uploadedPhotos={uploadedPhotos} twoHandsDetected={twoHandsDetected} onClosestPhotoChange={onClosestPhotoChange} />
         <TreeStar mode={mode} />
 
         {/* Floor Reflections */}
@@ -125,6 +124,7 @@ export const Experience: React.FC<ExperienceProps> = ({ mode, handPosition, uplo
           blur={2}
           far={4.5}
           color="#000000"
+          frames={1}
         />
       </group>
 
