@@ -86,7 +86,7 @@ export const Experience: React.FC<ExperienceProps> = ({ mode, handPosition, uplo
       />
 
       {/* Lighting Setup for Maximum Luxury */}
-      <Environment preset="lobby" background={false} blur={0.8} />
+      <Environment files="/textures/st_fagans_interior_1k.hdr" background={false} blur={0.8} />
 
       <ambientLight intensity={0.2} color="#004422" />
       <spotLight
